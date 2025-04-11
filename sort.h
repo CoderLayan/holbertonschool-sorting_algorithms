@@ -3,6 +3,17 @@
 
 #include <stddef.h>
 
+/**
+* struct listint_s - Doubly linked list node
+*
+* @n: Integer stored in the node
+* @prev: Pointer to the previous element of the list
+* @next: Pointer to the next element of the list
+*
+* Description: This struct represents a node in a doubly linked list.
+* It contains an integer value and pointers to the previous and next
+* nodes in the list. Used in sorting algorithms for demonstration.
+*/
 typedef struct listint_s
 {
 const int n;
@@ -10,6 +21,7 @@ struct listint_s *prev;
 struct listint_s *next;
 } listint_t;
 
+/* Function prototypes */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
